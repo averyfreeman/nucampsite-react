@@ -1,0 +1,26 @@
+.Jumbotron__light {
+	margin: 0;
+	padding: 30px;
+	background-image: linear-gradient(to right, #5637dd, #3046c5, #60106b);
+	color: white;
+	text-shadow: 3px 3px 6px black;
+}
+
+.Jumbotron__dark {
+	margin: 0;
+	padding: 30px;
+	background-image: linear-gradient(to left, #0d6efd, #3046c5, #60106b);
+	/* color: #0d6efd; */
+	color: rgba(224, 150, 13, 0.87);
+	text-shadow: 3px 3px 6px black;
+}
+
+.Jumbotron h2 {
+	color: #cec8ff;
+}
+
+.switch-container {
+	font-family: 'Share Tech Mono', 'Roboto Mono', monospace;
+	font-size: 1rem;
+	font-weight: 400;
+}

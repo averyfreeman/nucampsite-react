@@ -1,0 +1,36 @@
+.fa-star {
+	color: yellow !important;
+	/* margin: 4rem 4rem 4rem 4rem; */
+	stroke: 2px #000 !important;
+
+	-webkit-text-stroke: 2px #000 !important;
+	-webkit-text-fill-color: transparent !important;
+}
+
+.btn {
+	margin: 1rem 0;
+}
+
+.btn .light {
+	color: black !important;
+}
+
+.btn .dark {
+	color: white !important;
+}
+
+.btn-light {
+	color: black !important;
+}
+
+.btn-light:hover {
+	color: white !important;
+}
+
+.btn-dark {
+	color: white !important;
+}
+
+.btn-dark:hover {
+	color: black !important;
+}

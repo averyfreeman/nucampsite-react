@@ -1,0 +1,112 @@
+/* .Header__navbar-light { */
+.navbar-dark {
+	background-color: #901cad;
+	color: white;
+}
+
+.Header__navbar-dark {
+	background-color: #0d6efd;
+	color: rgba(224, 150, 13, 0.87);
+	text-shadow: 1.5px 1.5px 3px black;
+}
+
+.Header__navbar-light {
+	background-image: linear-gradient(
+		to left bottom,
+		#901cad,
+		#901cad,
+		#901cad,
+		#901cad,
+		#901cad,
+		#8f33b1,
+		#8f43b4,
+		#8f51b6,
+		#916cb9,
+		#9783b8,
+		#a199b5,
+		#aeaeae
+	);
+}
+
+.Header__navbar-dark {
+	background-image: linear-gradient(
+		to left bottom,
+		#0d6efd,
+		#0d6efd,
+		#0d6efd,
+		#0d6efd,
+		#0d6efd,
+		#2c68ea,
+		#3962d7,
+		#405dc5,
+		#47519d,
+		#454778,
+		#3e3c54,
+		#333333
+	);
+}
+
+.navbar {
+	/* display: flex; */
+	box-shadow: 2px 2px 16px #666;
+	/* justify-content: space-evenly; */
+}
+
+.nav-link {
+	/* width: 11rem; */
+	margin-left: 10px;
+}
+
+.Header__navbar-light .navbar-toggler {
+	background-color: #00000033;
+	border: 3px solid rgba(255, 255, 255, 0.35);
+	border-radius: 12px;
+	/* box-shadow: 3px 3px 6px black; */
+	padding: 6px 8px 6px 8px;
+}
+
+.Header__navbar-light .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.Header__navbar-dark .navbar-toggler {
+	background-color: #0000001a;
+	border: 3px solid rgba(055, 055, 200, 0.55);
+	border-radius: 12px;
+	/* box-shadow: 3px 3px 6px black; */
+	padding: 6px 8px 6px 8px;
+}
+
+.Header__navbar-dark .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28055, 055, 200, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.dark-orange {
+	color: rgba(224, 150, 13, 0.87) !important;
+}
+
+.lighter-orange {
+	color: rgb(252, 211, 30) !important;
+}
+
+.cyan {
+	color: rgb(11, 234, 250) !important;
+}
+
+.yellow {
+	color: rgba(255, 255, 0, 0.795) !important;
+}
+
+.bottom-dammit {
+	justify-content: flex-end !important;
+}
+
+.with-dark-shadow {
+	font-weight: 600 !important;
+	text-shadow: 1px 1px 3px black !important;
+}
+
+.with-light-shadow {
+	font-weight: 600 !important;
+	text-shadow: 1px 1px 3px #adadad !important;
+}

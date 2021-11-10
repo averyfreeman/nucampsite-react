@@ -1,0 +1,101 @@
+/* @import url('./'); */
+/* @import url('https://fonts.googleapis.com/css?family=Bangers|Carter+One|Sigmar+One|Titan+One|Itim'); */
+
+@font-face {
+	font-family: 'Bangers';
+	src: url('./bangers.woff2');
+}
+
+@font-face {
+	font-family: 'Carter One';
+	src: url('./carter-one.woff2');
+}
+
+@font-face {
+	font-family: 'Itim';
+	font-size: 1.2rem;
+	src: url('./itim.woff2');
+}
+
+/* @font-face {
+	font-family: 'Lobster';
+	font-size: 1.2rem;
+	src: url('/node_modules/typeface-lobster/files/lobster-latin-400.woff2');
+} */
+
+/*
+@font-face {
+	font-family: 'Open Sans';
+	font-size: 1.2rem;
+	src: local('Open Sans'),
+		url('/node_modules/typeface-open-sans/files/open-sans-latin-400.woff2');
+} */
+
+@font-face {
+	font-family: 'Sigmar One';
+	src: url('./sigmar-one.woff2');
+}
+
+@font-face {
+	font-family: 'Titan One';
+	src: url('./titan-one.woff2');
+}
+
+body {
+	margin: 0;
+	font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+		'Helvetica Neue', sans-serif;
+	font-size: 1.2rem;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul {
+	font-family: 'Bangers', cursive;
+}
+
+p,
+li {
+	font-family: 'Itim' 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+		'Helvetica Neue', sans-serif;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+.font-bangers {
+	font-family: 'Bangers';
+}
+
+.font-carter-one {
+	font-family: 'CarterOne';
+}
+
+.font-itim {
+	font-family: 'Itim';
+}
+
+.font-lobster {
+	font-family: 'Lobster';
+}
+
+.font-open-sans {
+	font-family: 'Open Sans';
+}
+
+.font-sigmar-one {
+	font-family: 'Sigmar One';
+}
+
+.font-titan-one {
+	font-family: 'Titan One';
+}

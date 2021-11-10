@@ -1,0 +1,84 @@
+body {
+	box-sizing: border-box;
+	font-family: 'Open Sans', 'Fira Sans', sans-serif;
+	overflow-x: hidden;
+}
+
+.Main__page-light {
+	background-color: #efefef;
+	color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity));
+	min-height: 55vh;
+}
+
+.Main__page-dark {
+	color: white;
+	background-color: #333;
+	min-height: 55vh;
+}
+
+.Main__flex-container {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	justify-items: center;
+}
+
+.Main__responsive-font {
+	font-size: 0.9rem;
+}
+/* these are created by the course developers & */
+/* globally scoped to interact with bootstrap css */
+
+h1,
+h2,
+h3,
+.card-body > .card-title {
+	font-family: 'Lobster', cursive;
+}
+
+p {
+	font-family: 'Roboto', 'Open Sans', 'Itim', sans-serif;
+}
+
+.preserve-word {
+	/* overflow-wrap: normal; */
+	word-wrap: normal;
+	inline-size: auto;
+}
+
+.card {
+	color: black;
+}
+
+.light {
+	box-shadow: 3px 3px 16px #333;
+}
+
+.dark {
+	box-shadow: 3px 3px 16px #666;
+}
+
+.card-title {
+	font-weight: 500;
+	font-size: 1.25rem;
+	text-decoration: none !important;
+}
+
+h2 {
+	color: #3046c5;
+}
+
+/* note: I put this in the Main file as a style */
+/* tag so I could make it responsive more easily */
+/* .card-img-overlay .card-title {
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+} */
+
+.row-content {
+	padding: 50px 0;
+	border-bottom: 1px ridge;
+	min-height: 200px;
+}

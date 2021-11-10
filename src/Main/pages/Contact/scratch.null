@@ -1,0 +1,142 @@
+import React, { useEffect, useState } from 'react';
+import { Col, Container, Input, InputGroup, Label, Row } from 'reactstrap';
+import FG from './FG';
+// import BCrumbHeading from 'Main/BCrumbHeading/BCrumbHeading';
+// import * as Immer from 'immer';
+// import { useImmer } from 'use-immer';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+// import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
+
+const Contact = (props) => {
+	const [data, setData] = useState( {
+		firstName: '',
+		lastName: '',
+		phoneNum: '',
+		email: '',
+		agree: false,
+		contactType: 'By Phone',
+		feedback: '',
+	});
+
+	useEffect(() => {
+		console.log(data);
+	}, [data]);
+
+	const handleChange = (e) => {
+		e.prevent
+		const target = e.target
+		const name = target.name
+		const value = target.type === 'checkbox' ? target.checked : target.value;
+		setData({...[name]: ...data, ...value})
+	}
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		console.log("Data submitted: ", JSON.stringify(data));
+	}
+
+	{/* <BCrumbHeading name="Contact" />
+	<div className="row row-content">
+								<div className="col-12">
+										<h2>Send us your Feedback</h2>
+										<hr />
+								</div>
+								</div> */}
+	return (
+		<div>
+			<div className="col-md-10">
+				<Form onSubmit={handleSubmit}>
+					<FG direction={row}
+						 htmlFor="firstName" labelWidth={2}
+							label="First Name"
+						 inputWidth={10}
+								type="text" 
+								id="firstName" 
+								name="firstName"
+								placeholder="First Name"
+								value={data.firstName}
+								onChange={handleChange} 
+							/>
+										</Form> 
+		</div>
+	</div>
+	);
+}
+
+{/* <FormGroup row>
+<Label htmlFor="firstName" md={2}>First Name</Label>
+<Col md={10}>
+	<Input type="text" id="firstName" name="firstName"
+			placeholder="First Name"
+			value={data.firstName}
+			onChange={handleChange} />
+</Col>
+</FormGroup> */}
+{/* <FormGroup row>
+<Label htmlFor="lastName" md={2}>Last Name</Label>
+<Col md={10}>
+	<Input type="text" id="lastName" name="lastName"
+			placeholder="Last Name"
+			value={data.lastName}
+			onChange={handleChange} />
+</Col>                        
+</FormGroup>
+<FormGroup row>
+<Label htmlFor="phoneNum" md={2}>Phone</Label>
+<Col md={10}>
+	<Input type="tel" id="phoneNum" name="phoneNum"
+			placeholder="Phone number"
+			value={data.phoneNum}
+			onChange={handleChange} />
+</Col>
+</FormGroup>
+<FormGroup row>
+<Label htmlFor="email" md={2}>Email</Label>
+<Col md={10}>
+	<Input type="email" id="email" name="email"
+			placeholder="Email"
+			value={data.email}
+			onChange={handleChange} />
+</Col>
+</FormGroup>
+<FormGroup row>
+<Col md={{size: 4, offset: 2}}>
+	<FormGroup check>
+			<Label check>
+					<Input type="checkbox"
+							name="agree"
+							checked={state.agree}
+							onChange={handleChange} /> {' '}
+					<strong>May we contact you?</strong>
+			</Label>
+	</FormGroup>
+</Col>
+<Col md={4}>
+	<Input type="select" name="contactType"
+					value={state.contactType}
+					onChange={handleChange}>
+			<option>By Phone</option>
+			<option>By Email</option>
+	</Input>
+</Col>
+</FormGroup>
+<FormGroup row>
+<Label htmlFor="feedback" md={2}>Your Feedback</Label>
+<Col md={10}>
+	<Input type="textarea" id="feedback" name="feedback"
+			rows="12"
+			value={state.feedback}
+			onChange={handleChange}></Input>
+</Col>
+	</FormGroup>
+		<FormGroup row>
+			<Col md={{size: 10, offset: 2}}>
+				<Button type="submit" color="primary">
+					Send Feedback
+				</Button>
+			</Col>
+			</FormGroup>
+		*/}
+
+export default Contact;
